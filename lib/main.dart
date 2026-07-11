@@ -11,5 +11,9 @@ void main() async {
   await Firebase.initializeApp(
     options: DefaultFirebaseOptions.currentPlatform,
   );
-  runApp(MaterialApp(home: FirstScreen()));
+  //runApp(MaterialApp(home: FirstScreen()));
+  //stap7: Firebase CRUD operations
+  runApp(MaterialApp(
+    home: FirstScreen(), debugShowCheckedModeBanner: false,)
+  );
 }
